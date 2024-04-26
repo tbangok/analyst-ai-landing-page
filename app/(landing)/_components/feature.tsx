@@ -8,6 +8,10 @@ import {
   CheckBadgeIcon,
   DocumentIcon,
 } from "@heroicons/react/20/solid";
+import Card from "./card";
+import React from "react";
+import style from "./card.module.css";
+import { cn } from "@/lib/utils";
 
 const features = [
   {
@@ -69,22 +73,35 @@ export default function Feature() {
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
             {features.map((feature) => (
-              <>
-                <div key={feature.name} className="relative pl-16">
-                  <dt className="text-left text-lg font-semibold leading-7 text-gray-200 md:text-left sm:text-left">
-                    <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
-                      <feature.icon
-                        className="h-6 w-6 text-white"
-                        aria-hidden="true"
-                      />
-                    </div>
-                    {feature.name}
-                  </dt>
-                  <dd className="text-left mt-2 text-base leading-7 text-gray-200 md:text-left sm:text-left">
-                    {feature.description}
-                  </dd>
+              <div className={cn(style["e-card"], style["playing"])}>
+                <div className={style["image"]}></div>
+
+                <div className={style["wave"]}></div>
+                <div className={style["wave"]}></div>
+                <div className={style["wave"]}></div>
+
+                <div className={style["infotop"]}>
+                  <div className=" -mt-12 mb-4 flex items-center justify-center rounded-lg ">
+                    <feature.icon
+                      className="h-12 w-12 text-white"
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <div key={feature.name} className="relative px-4">
+                    <dt className="text-center text-lg font-semibold leading-7 text-gray-200 md:text-center sm:text-center">
+                      {feature.name}
+                    </dt>
+                    <dd
+                      className={cn(
+                        "text-center mt-2 text-base leading-7 text-gray-200 md:text-center sm:text-center",
+                        style["name"]
+                      )}
+                    >
+                      {feature.description}
+                    </dd>
+                  </div>
                 </div>
-              </>
+              </div>
             ))}
           </dl>
         </div>

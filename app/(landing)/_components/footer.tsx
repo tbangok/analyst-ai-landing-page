@@ -4,15 +4,7 @@ import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 
 export const Footer = () => {
-  const router = useRouter();
-
-  const onclickPolicy = () => {
-    router.push(`/privacy-policy`);
-  };
-
-  const onclickTerms = () => {
-    router.push(`/terms-and-conditions`);
-  };
+   
   return (
     <footer className="bg-gray-900  border-t border-gray-400 shadow-sm ">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
@@ -33,7 +25,7 @@ export const Footer = () => {
               </h2>
               <ul className="text-gray-200">
                 <li className="mb-4">
-                  <a href="https://flowbite.com/" className="hover:underline">
+                  <a href="https://analystai.ai/" className="hover:underline">
                     AnalystAI
                   </a>
                 </li>
@@ -54,17 +46,14 @@ export const Footer = () => {
               <ul className="text-gray-200">
                 <li className="mb-4">
                   <a
-                    href="https://github.com/themesberg/flowbite"
+                    href="https://github.com/Vietnam-VoDich"
                     className="hover:underline"
                   >
                     Github
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="https://discord.gg/4eeurUVvTy"
-                    className="hover:underline"
-                  >
+                  <a href="https://discord.com/" className="hover:underline">
                     Discord
                   </a>
                 </li>
@@ -106,7 +95,7 @@ export const Footer = () => {
               </svg>
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/Vietnam-VoDich"
               className="text-gray-200 hover:text-indigo-400 dark:hover:text-white ml-4"
             >
               {/* GitHub Icon */}

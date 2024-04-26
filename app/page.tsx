@@ -4,6 +4,7 @@ import Feature from "./(landing)/_components/feature";
 import CTA from "./(landing)/_components/cta";
 import Partners from "./(landing)/_components/partners";
 import Support from "./(landing)/_components/support";
+import Card from "./(landing)/_components/card";
 
 export default function Home() {
   return (
