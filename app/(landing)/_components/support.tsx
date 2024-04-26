@@ -17,7 +17,7 @@ export default function Support() {
                   alt="Google for Startups"
                 />
               </Button>
-              <Button variant="secondary" asChild>
+              <Button variant="secondary" size="lg"  asChild>
                 <img
                   className="col-span-2 max-h-24 w-full object-contain lg:col-span-1 h-16"
                   src="https://upload.wikimedia.org/wikipedia/en/7/75/ElevenLabs_logo_2.png"
