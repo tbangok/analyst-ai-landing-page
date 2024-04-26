@@ -1,12 +1,19 @@
 .e-card {
   margin: auto;
   background: transparent;
-  box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
+  box-shadow: 0px 8px 28px -9px rgba(0, 0, 0, 0.45);
   position: relative;
   width: 340px;
   height: 330px;
   border-radius: 16px;
   overflow: hidden;
+}
+
+@media (max-width: 440px) {
+  .e-card {
+    height: 380px;
+    width: 280px;
+  }
 }
 
 .wave {
@@ -18,7 +25,7 @@
   top: 0;
   margin-left: -50%;
   margin-top: -70%;
-  background: linear-gradient(744deg,#af40ff,#5b42f3 60%,#00ddeb);
+  background: linear-gradient(744deg, #af40ff, #5b42f3 60%, #00ddeb);
 }
 
 .icon {

@@ -7,8 +7,7 @@ import {
   BriefcaseIcon,
   CheckBadgeIcon,
   DocumentIcon,
-} from "@heroicons/react/20/solid";
-import Card from "./card";
+} from "@heroicons/react/20/solid"; 
 import React from "react";
 import style from "./card.module.css";
 import { cn } from "@/lib/utils";
@@ -23,7 +22,7 @@ const features = [
   {
     name: "Security and Data Privacy.",
     description:
-      "We mask your data while sending any information to LLMs. This means, the name of the Target Company, key terms and financials are never passed on.",
+      "We mask your data while sending any information to LLMs. The name of the Target Company, key terms and financials are never passed on.",
     icon: LockClosedIcon,
   },
   {
